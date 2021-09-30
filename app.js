@@ -29,7 +29,8 @@ app.engine('.hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}))
 app.set('view engine', '.hbs')
 
 // Sessions
-app.use(session({
+app.use(
+    session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: false,
