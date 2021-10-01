@@ -19,13 +19,10 @@ const StorySchema = new mongoose.Schema({
     },
 
     user: {
-        type: mongoose.Schema.Types,
-        required: true
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     },
 
-    image: {
-        type: String,
-    },
 
     createdAt: {
         type: Date,
@@ -33,4 +30,4 @@ const StorySchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('Story', StorySchema)
