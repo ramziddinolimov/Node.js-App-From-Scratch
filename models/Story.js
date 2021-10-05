@@ -15,7 +15,7 @@ const StorySchema = new mongoose.Schema({
     status: {
         type: String,
         default: 'public',
-        enum: ['publilc', 'private']
+        enum: ['public', 'private'],
     },
 
     user: {
