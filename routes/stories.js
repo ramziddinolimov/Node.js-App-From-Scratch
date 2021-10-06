@@ -22,4 +22,14 @@ router.post('/', ensureAuth, async (req, res) => {
 })
 
 
+router.get('/stories', ensureAuth, async (req, res) => {
+    try {
+        
+    } catch (err) {
+        console.error(err)
+        
+    }
+})
+
+
 module.exports = router
